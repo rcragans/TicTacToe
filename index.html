@@ -6,18 +6,22 @@
     <title>Tic Tac Toe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-    
+
 </head>
 <body>
-    <!-- 
+
+    <!-- a message div, to hold messages we need to give to the player -->
+    <div id="message">It's X's Turn</div>
+
+<!-- 
 				All 3 rows, will have 3 buttons.
 				Each row will be called a "board-row"
 				Each button, will have a unique id for that button
 				Each button will have a class of "square"
  -->
- <div id="board">
-    <div class="board-row">
-            <button id="A1" class="square">-</button>
+    <div id="board">
+        <div class="board-row">
+            <button id="A1" class="square haha">-</button>
             <button id="B1" class="square">-</button>
             <button id="C1" class="square">-</button>
         </div>
@@ -32,9 +36,11 @@
             <button id="C3" class="square">-</button>
 
         </div>
+        <button onclick ="reset()">New Game</button>
     </div>
-</div>
 
+        <div class = "player1Score">X score</div>
+        <div class = "player2Score">O score</div>
     <script src="scripts.js"></script>
 </body>
 </html>
